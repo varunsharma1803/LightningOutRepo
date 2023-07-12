@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lightning Out Example</title>
+    <script src="https://d2t000000ixrbeak-dev-ed.develop.lightning.force.com/lightning/lightning.out.js"></script>
+</head>
+<body>
+    <div id="lightning-container"></div>
+    <script>
+        $Lightning.use("c:AccountListApp", function() {
+            $Lightning.createComponent(
+                "c:AccountListLWC",
+                {},
+                "lightning-container",
+                function(cmp) {
+                    // Callback function executed after component creation
+                }
+            );
+        });
+    </script>
+</body>
+</html>
